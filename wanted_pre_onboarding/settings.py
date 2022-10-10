@@ -21,6 +21,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 
 # SECURITY WARNING: don't run with debug turned on in production!
+SECRET_KEY = 'django-insecure-e(e$6$_w@2+i2v)inf)zwvr*8k=26e8%gh5d$ck@5nbao0=*(^'
 DEBUG = True
 
 ALLOWED_HOSTS = []
@@ -35,6 +36,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'wanted_pre_onboarding.apps.AppsConfig',
+    'rest_framework'
 ]
 
 MIDDLEWARE = [
@@ -101,9 +104,9 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/4.1/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'ko-KR'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'Asia/Seoul'
 
 USE_I18N = True
 
