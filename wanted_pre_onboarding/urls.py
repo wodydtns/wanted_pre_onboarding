@@ -15,8 +15,8 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from .views import HelloAPI
+from .views import InsertApplyment
 
 urlpatterns = [
-    path('apply/insert', HelloAPI),
+    path('apply/insert', InsertApplyment),
 ]
