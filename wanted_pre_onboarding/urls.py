@@ -15,8 +15,9 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from .views import InsertApplyment
+from .views import InsertApplyment, UpdateApplyment
 
 urlpatterns = [
     path('apply/insert', InsertApplyment),
+    path('apply/update', UpdateApplyment),
 ]
